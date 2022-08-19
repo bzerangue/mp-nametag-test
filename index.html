@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+  <div id="nameTagContainer" style="font-family:'Geneva','sans-serif';height:173px;width:272px;">
+    <style>
+      #nameTagWrapper {height:100%; overflow:hidden; display:flex; flex-direction: column; justify-content:space-between; gap:6px;}
+      #nameTagName {border-bottom: 1px solid #bbbbbb; padding-bottom: 4px;}
+      #nameWrapper {display:flex;align-items:center;gap:4px;}
+      .eventItem {display:flex; gap:4px; font-size:11px;}
+      .eventRoomNumber {font-style: italic;}
+      .nameNickname {font-size:20px; font-weight:bold;}
+      .nameLastname {font-size:13px;}
+      .attrWrapper {display:flex; gap:4px; align-items:center;}
+      .attrNoteList {font-size: 9px;}
+      .attribute-icon-div .attribute-icon, .attribute-icon-div img {width:14px;height:14px;}
+      #footerArea {width:100%;border-top: solid 1px #bbbbbb; padding-top: 4px;}
+      .parentList {font-size: 12px;}
+      .parentList:not(empty)::before {content:'Parents: '; font-weight: bold;}
+      .securityCodeArea {display:flex;justify-content:space-between; align-items:baseline;}
+      .securityCodeItem {font-weight: bold;}
+      .tagDateItem {font-size:10px; text-align:right;}
+    </style>
+    <div id="nameTagWrapper">
+      <div id="nameTagName">
+        <div id="nameWrapper">
+          <div class="nameNickname">[Nickname]</div>
+          <div class="nameLastname">[Last_Name]</div>
+        </div>
+      </div>
+      <div class="repeat repeat-event">
+        <div class="eventItem">
+          <div class="eventTitleLabel">[Event_Title]</div>
+          <div class="eventRoomNumber">[Room_Number]</div>
+        </div>
+      </div>
+      <div class="repeat repeat-attribute">
+        <div class="attrWrapper" style="">
+          <div class="attrIconList">[Attribute_Icon]</div>
+          <div class="attrNoteList">[Attribute_Note]</div>
+        </div>
+      </div>
+      <div id="footerArea">
+        <div class="parentListArea">
+          <span class="parentList">[Parents]</span>
+        </div>
+        <div class="securityCodeArea">
+          <div class="securityCodeItem">[Security_Code]</div>
+          <div class="tagDateItem">[Date]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
